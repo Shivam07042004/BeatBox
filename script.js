@@ -21,39 +21,36 @@ song.addEventListener('click',function()
     }
 });*/
 
-function song_list(name,image,path)
+var songs_lists=document.getElementsByClassName('songs-lists');
+var flage=false;
+var i;
+var audio;
+for(i=0;i<songs_lists.length;i++)
 {
-    this.name=name;
-    this.image=image;
-    this.path=path;
+    songs_lists[i].addEventListener('click',function()
+    {
+        if(audio!=undefined)
+        {
+            console.log('pre paused');
+            // flage=false;
+           audio.pause();
+        }
+        console.log(audio);
+        var path=this.getAttribute('data-path');
+        var song_name=this.getAttribute('data-song');
+        console.log(song_name);
+        audio=new Audio(path);
+        if(flage==false)
+       { 
+        console.log('play');
+           flage=true;
+           audio.play();
+       }
+       else  
+       {
+        console.log('pause');
+         flage=false;
+         audio.pause();
+       }
+    })
 }
-
-song_list.prototype.getname=function()
-{
-    return this.name;
-}
-
-song_list.prototype.getimage=function()
-{
-    return this.image;
-}
-
-song_list.prototype.getpath=function()
-{
-    return this.path;
-}
-
-var Levitating=new song_list("Levitating","media/levitating.jpg","media/Dua Lipa - Levitating Featuring DaBaby (Official Music Video).mp3");
-var content=document.getElementById('content');
-let flage=false;
-window.addEventListener('click',function()
-{
-    console.log('clicked');
-    var object=this.window.getAttribute('data-song');
-    var name=object.getname();
-    var image=object.getimage();
-    var path=object.getpath();
-    var audio=new Audio(path);
-    if(flage==false)
-        audio.play();
-});
