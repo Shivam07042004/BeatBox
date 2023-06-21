@@ -296,3 +296,8 @@ body
     width: 6px;
   }
   
+
+.heading-hover:hover
+{
+    text-decoration: underline;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatBox</title>
+    <link rel="shortcut icon" type="image/x-icon" href="media/beatbox.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">    
+    <link rel="stylesheet" type="text/css" href="stylebb.css">
+    <script src="https://kit.fontawesome.com/7b2d0a70c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <!--navigation section-->
+    <div id="navigation">
+        <div id="logo">
+        <img src="media/beatbox.png" height="100px" width="100px">
+        </div>
+
+       <a href="beatbox.html"><div id="home" class="heading-hover">Home </div> </a>  
+       <a href="#"> <div id="favourites" class="heading-hover">Favourites</div></a>
+       <div> <input type="username" for="username" id="search-box"> </div>
+       <div><button type="submit" id="button"> Search </button></div>
+      <a href="#"><div id="user">
+        <img src="media/user.png" height="100px" width="100px">
+      </div></a>
+    </div>
+    <!--navigation section-->
+    <div class="content">
+        <div class="coldplay">
+            <div class="coldplay-header">
+                <div class="coldplay-header-image">
+                    <img src="media/luis fonsi2.jpg" width="100%" height="100%">
+                </div>
+                <div class="coldplay-header-details">
+                        <p>Luis Alfonso Rodríguez López-Cepero (born April 15, 1978), known by his stage name Luis Fonsi is a Puerto 
+                            Rican singer. He is known for multiple songs, one of them being "Despacito" featuring rapper Daddy Yankee.</p>
+                        <p> 247 tracks | 130 albums</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="song-lists">
+                <a href="#" class="songs-lists"  data-song="Despacito"  data-path="media/Despacito---Luis-Fonsi-ft.-Daddy-Yankee(PagalWorld).mp3">  
+                        <div class="song-lists-elements">
+                        <div> <img src="media/despacito.jpg" class="object-fit-cover border rounded" height="100%" width="150px"> </div>
+                        <div class="song-lists-elements-details">
+                            <div> Despacito</div>
+                            <div > <i class="fa-solid fa-play song-details-elements-details-sign"></i> </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="songs-lists"  data-song="Calm down"  data-path="media/Calm-Down-Calm-Down(PaglaSongs).mp3"> 
+                    <div class="song-lists-elements">
+                        <div> <img src="media/calm down.jpg" class="object-fit-cover border rounded" height="100%" width="150px"> </div>
+                        <div class="song-lists-elements-details">
+                            <div>Calm Down</div>
+                            <div > <i class="fa-solid fa-play song-details-elements-details-sign"></i> </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="songs-lists"  data-song="Love you like a love song"  data-path="media/Love You Like A Love Song - Selena Gomez n The Scene- [PagalWorld.NL].mp3"> 
+                    <div class="song-lists-elements">
+                        <div> <img src="media/love you like a love song.jpg" class="object-fit-cover border rounded" height="100%" width="150px"> </div>
+                        <div class="song-lists-elements-details">
+                            <div> Love You Like A Love Song</div>
+                            <div > <i class="fa-solid fa-play song-details-elements-details-sign"></i> </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="songs-lists"  data-song="Wolves"  data-path="media/Wolves - Selena Gomez, Marshmello- [PagalWorld.NL].mp3"> 
+                    <div class="song-lists-elements">
+                        <div> <img src="media/wolves2.jpg" class="object-fit-cover border rounded" height="100%" width="150px"> </div>
+                        <div class="song-lists-elements-details">
+                            <div> Wolves</div>
+                            <div > <i class="fa-solid fa-play song-details-elements-details-sign"></i> </div>
+                        </div>
+                    </div>
+                </a>
+              
+            </div>
+
+        </div>
+
+        <div class="queue">
+            <h1 style="margin:7px;"> Queue</h1>
+
+            <!--queue songs-->
+            <div class="queue-songs">
+                <a href="#" class="songs-lists"  data-song="Coldplay"  data-path="media/Hymn-For-The-Weekend(PaglaSongs).mp3">  
+                    <div class="song1">
+                        <div> <img src="media/coldplay.jpg" class="object-fit-cover border rounded" height="100%" width="100px"> </div>
+                        <div class="song-details">  Hymn for</div>
+                        <div class="play-sign"> <i class="fa-solid fa-play"></i> </div>
+                    </div>
+                </a>
+                <a href="#" class="songs-lists"  data-song="Levitating" data-path="media/Dua Lipa - Levitating Featuring DaBaby (Official Music Video).mp3">
+                    <div class="song1">
+                        <div> <img src="media/levitating.jpg" class="object-fit-cover border rounded" height="100%" width="100px"> </div>
+                        <div class="song-details">  Levitating  </div>
+                        <div class="play-sign"> <i class="fa-solid fa-play"></i> </div>
+                    </div>
+                </a>
+                <a href="#" class="songs-lists"  data-song="Bones" data-path="media/Imagine_Dragon_-_Bones.mp3">
+                    <div class="song1">
+                        <div> <img src="media/bones.jpg" class="object-fit-cover border rounded" height="100%" width="100px"> </div>
+                        <div class="song-details">  Bones  &nbsp&nbsp&nbsp&nbsp&nbsp</div>
+                        <div class="play-sign"> <i class="fa-solid fa-play"></i> </div>
+                    </div>
+                </a>
+                <a href="#" class="songs-lists"  data-song="Believer" data-path="media/Believer(PagalWorld).mp3">
+                    <div class="song1">
+                        <div> <img src="media/believer.jpg" class="object-fit-cover border rounded" height="100%" width="100px"> </div>
+                        <div class="song-details">  Believer &nbsp&nbsp </div>
+                        <div class="play-sign"> <i class="fa-solid fa-play"></i> </div>
+                    </div>
+                </a>
+            </div>
+        
+            <br>
+            <h1> Recent played </h1>
+
+            <div class="queue-songs">
+                <a href="#" class="songs-lists"  data-song="Coldplay"  data-path="media/Hymn-For-The-Weekend(PaglaSongs).mp3">  
+                    <div class="song1">
+                        <div> <img src="media/coldplay.jpg" class="object-fit-cover border rounded" height="100%" width="100px"> </div>
+                        <div class="song-details">  Hymn for</div>
+                        <div class="play-sign"> <i class="fa-solid fa-play"></i> </div>
+                    </div>
+                </a>
+                <a href="#" class="songs-lists"  data-song="Levitating" data-path="media/Dua Lipa - Levitating Featuring DaBaby (Official Music Video).mp3">
+                    <div class="song1">
+                        <div> <img src="media/levitating.jpg" class="object-fit-cover border rounded" height="100%" width="100px"> </div>
+                        <div class="song-details">  Levitating  </div>
+                        <div class="play-sign"> <i class="fa-solid fa-play"></i> </div>
+                    </div>
+                </a>
+                <a href="#" class="songs-lists"  data-song="Bones" data-path="media/Imagine_Dragon_-_Bones.mp3">
+                    <div class="song1">
+                        <div> <img src="media/bones.jpg" class="object-fit-cover border rounded" height="100%" width="100px"> </div>
+                        <div class="song-details">  Bones  &nbsp&nbsp&nbsp&nbsp&nbsp</div>
+                        <div class="play-sign"> <i class="fa-solid fa-play"></i> </div>
+                    </div>
+                </a>
+                <a href="#" class="songs-lists"  data-song="Believer" data-path="media/Believer(PagalWorld).mp3">
+                    <div class="song1">
+                        <div> <img src="media/believer.jpg" class="object-fit-cover border rounded" height="100%" width="100px"> </div>
+                        <div class="song-details">  Believer &nbsp&nbsp </div>
+                        <div class="play-sign"> <i class="fa-solid fa-play"></i> </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+<script src="script.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></scrip> 
+
+
+</body>
+</html>
