@@ -301,3 +301,7 @@ body
 {
     text-decoration: underline;
 }
+
+.example::-webkit-scrollbar {
+    display: none;
+  }
